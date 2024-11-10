@@ -1,7 +1,6 @@
 "use client";
-
-
-import Image from "next/image";
+import Image from 'next/image';
+import profileImage from '../../public/imgs/profile1.png';
 import React from "react";
 
 const Hero = () => {
@@ -24,13 +23,15 @@ const Hero = () => {
               </button>
             </div>
           </div>
-          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 ">
-            <Image
-              className="object-cover object-center rounded  ml-[100px] "
-              alt="hero"
-              src={require('../../public/imgs/profile1.png')}
-            />
-          </div>
+          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+      <Image
+        className="object-cover object-center rounded ml-[100px]"
+        alt="hero"
+        src={profileImage}
+        width={500} // Replace with the actual width of your image
+        height={500} // Replace with the actual height of your image
+      />
+    </div>
         </div>
       </section>
     
